@@ -3,7 +3,7 @@ all: part_one part_two
 part_one: part_one.o parseInt.o printlnInt.o sortQ.o
 	ld -o $@ $^
 
-part_two: part_two.o
+part_two: part_two.o parseInt.o printlnInt.o
 	ld -o $@ $^
 
 %.o: %.asm
